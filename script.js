@@ -17,36 +17,36 @@ const skills = [
   { name: "Node.js", level: 85, color: "#68a063", icon: "server" },
   { name: "Tailwind CSS", level: 90, color: "#06b6d4", icon: "zap" },
   { name: "MongoDB", level: 82, color: "#4db33d", icon: "database" },
-  { name: "Express.js", level: 80, color: "#00ff41", icon: "cpu" },
+  { name: "Django", level: 80, color: "#00ff41", icon: "cpu" },
 ]
 
 // Projects data
 const projects = [
   {
-    title: "EcoCommerce Platform",
+    title: "Personal Finance Tracker",
     description:
-      "Sustainable e-commerce platform with carbon footprint tracking and eco-friendly product recommendations.",
-    tech: ["React", "Node.js", "MongoDB", "Stripe", "Chart.js"],
-    image: "/placeholder.svg?height=300&width=500&text=EcoCommerce+Platform",
+      "A personal finance tracker that lets you scan bills via OCR, track expenses, and view your complete financial history in one place.",
+    tech: ["React", "Node.js", "Next.js", "Chart.js"],
+    image: "/placeholder.svg?height=300&width=500&text=Personal+Finance+Tracker",
     glowColor: "#00ff41",
-    github: "#",
-    live: "#",
+    github: "https://github.com/Namanjaina/personal-finance-tracker",
+    
   },
   {
-    title: "DevFlow Task Manager",
-    description: "Collaborative task management system with real-time updates, kanban boards, and team analytics.",
-    tech: ["React", "Express.js", "Socket.io", "PostgreSQL", "Redis"],
-    image: "/placeholder.svg?height=300&width=500&text=DevFlow+Task+Manager",
+    title: "Aura Voice Assistant",
+    description: "Aura Voice Assistant is an AI tool that responds to voice commands, answers queries, and automates tasks.",
+    tech: ["React", "Flask", "Python", "FastAPI", "Tailwindcss"],
+    image: "/placeholder.svg?height=300&width=500&text=Aura+Voice+Assistant",
     glowColor: "#0099ff",
-    github: "#",
-    live: "#",
+    github: "https://github.com/Namanjaina/Aura-voice-assistant",
+    
   },
   {
-    title: "CodeMist Weather",
+    title: "Smart Blood & Organ Donation Network ",
     description:
-      "Beautiful weather application with interactive maps, detailed forecasts, and atmospheric visualizations.",
-    tech: ["JavaScript", "HTML5", "CSS3", "Weather API", "Canvas"],
-    image: "/placeholder.svg?height=300&width=500&text=CodeMist+Weather",
+      "A real-time platform that instantly connects patients with nearby verified blood and organ donors using location-based matching and emergency alerts.",
+    tech: ["JavaScript", "React.js", "Tailwind CSS", "Weather API", "Python","Django"],
+    image: "/placeholder.svg?height=300&width=500&text=Smart+Blood&Organ+Donation+Network",
     glowColor: "#00ffff",
     github: "#",
     live: "#",
@@ -200,6 +200,8 @@ class CodeMistBackground {
       "POST",
       "async",
       "await",
+      "Naman==Danger",
+      "Naman==Coder",
     ]
 
     this.colors = ["#00ff41", "#0099ff", "#00ffff", "#39ff14", "#00ff88"]
