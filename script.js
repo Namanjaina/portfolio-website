@@ -523,12 +523,9 @@ class ProjectsRenderer {
             <div class="project-buttons">
               <a href="${project.github}" class="project-button outline" target="_blank">
                 <i data-lucide="github"></i>
-                Code
+               Git Code
               </a>
-              <a href="${project.live}" class="project-button filled" target="_blank">
-                <i data-lucide="external-link"></i>
-                Live
-              </a>
+              
             </div>
           </div>
         </div>
