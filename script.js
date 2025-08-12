@@ -720,13 +720,12 @@ function scrollToTop() {
 }
 
 function downloadResume() {
-  // Create a temporary link to download resume
-  const link = document.createElement("a")
-  link.href = "/resume.pdf" // Replace with actual resume path
-  link.download = "Naman_Bagrecha_Resume.pdf"
-  document.body.appendChild(link)
-  link.click()
-  document.body.removeChild(link)
+    const link = document.createElement('a');
+    link.href = 'public/resume.jpg'; // Path to your image
+    link.download = 'Naman_Bagrecha_Resume.jpg'; // File name for download
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 }
 
 // Mouse tracking for background effects
@@ -847,11 +846,11 @@ function initAnimationHealthCheck() {
         new TypingAnimation(
           skillsElement,
           [
-            "Specializing in: HTML | CSS | JavaScript | React",
+            "Specializing in: HTML | CSS | JavaScript | React | Django",
             "Building with: Node.js | MongoDB | Express.js",
             "Crafting: Responsive Design | Modern UI/UX",
             "Creating: Full-Stack Applications | APIs",
-            "Mastering: Tailwind CSS | TypeScript | Next.js",
+            "Mastering: Tailwind CSS | React | Django | Python",
           ],
           {
             speed: 80,
@@ -895,11 +894,11 @@ document.addEventListener("DOMContentLoaded", () => {
       new TypingAnimation(
         skillsElement,
         [
-          "Specializing in: HTML | CSS | JavaScript | React",
-          "Building with: Node.js | MongoDB | Express.js",
-          "Crafting: Responsive Design | Modern UI/UX",
-          "Creating: Full-Stack Applications | APIs",
-          "Mastering: Tailwind CSS | TypeScript | Next.js",
+         "Specializing in: HTML | CSS | JavaScript | React | Django",
+            "Building with: Node.js | MongoDB | Express.js",
+            "Crafting: Responsive Design | Modern UI/UX",
+            "Creating: Full-Stack Applications | APIs",
+            "Mastering: Tailwind CSS | React | Django | Python",
         ],
         {
           speed: 80,
