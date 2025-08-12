@@ -506,9 +506,7 @@ class ProjectsRenderer {
               <button class="project-action green" onclick="window.open('${project.github}', '_blank')">
                 <i data-lucide="github"></i>
               </button>
-              <button class="project-action blue" onclick="window.open('${project.live}', '_blank')">
-                <i data-lucide="external-link"></i>
-              </button>
+              
             </div>
           </div>
           <div class="project-content">
