@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naman Bagrecha - Full Stack Developer</title>
+    <meta name="description" content="Full Stack Developer specializing in React, Node.js, and modern web technologies">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress" class="scroll-progress"></div>
+
+    <!-- Code Mist Background Canvas -->
+    <canvas id="code-mist-canvas" class="code-mist-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <span id="typing-logo" class="typing-text"></span>
+                </div>
+                <div class="nav-links">
+                    <a href="#home" class="nav-link active" data-section="home">Home</a>
+                    <a href="#about" class="nav-link" data-section="about">About</a>
+                    <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                    <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                    <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    NAMAN
+                    <br>
+                    <span class="hero-subtitle">BAGRECHA</span>
+                </h1>
+                <div class="hero-divider"></div>
+            </div>
+
+            <div class="hero-card">
+                <div class="hero-card-content">
+                    <p class="hero-role">
+                        <span class="text-green">Full-Stack Developer</span>
+                    </p>
+                    <p class="hero-description">
+                        Crafting digital experiences through the 
+                        <span class="text-blue">art of code</span> and 
+                        <span class="text-cyan">innovative solutions</span>
+                    </p>
+                    <div class="hero-typing">
+                        <span class="text-green">&gt; </span>
+                        <span id="typing-skills" class="typing-text"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-buttons">
+                <button class="code-button" onclick="scrollToSection('projects')">
+                    <i data-lucide="eye"></i>
+                    explore_projects()
+                </button>
+                <button class="code-button blue" onclick="scrollToSection('contact')">
+                    <i data-lucide="mail"></i>
+                    contact_me()
+                </button>
+            </div>
+
+            <div class="scroll-indicator">
+                <div class="scroll-mouse">
+                    <div class="scroll-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">// about_me</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text">
+                    <div class="glow-card">
+                        <div class="card-content">
+                            <p class="about-paragraph">
+                                I'm a passionate <span class="text-green">Full-Stack Developer</span> who
+                                believes in the power of clean code and innovative solutions. My journey in technology is driven by
+                                curiosity and a commitment to creating meaningful digital experiences.
+                            </p>
+                            <p class="about-paragraph">
+                                Specializing in modern web technologies including 
+                                <span class="text-blue">React</span>,
+                                <span class="text-green">Node.js</span>, and 
+                                <span class="text-cyan">MongoDB</span>. I transform complex problems into
+                                elegant, scalable solutions.
+                            </p>
+
+                            <div class="code-block">
+                                <div class="code-line text-green">const developer = {</div>
+                                <div class="code-line text-blue ml-4">
+                                    name: <span class="text-yellow">"Naman Bagrecha"</span>,
+                                </div>
+                                <div class="code-line text-blue ml-4">
+                                    passion: <span class="text-yellow">"Full-Stack Development"</span>,
+                                </div>
+                                <div class="code-line text-blue ml-4">
+                                    skills: <span class="text-cyan">["React", "Node.js", "MongoDB"]</span>
+                                </div>
+                                <div class="code-line text-green">}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-visual">
+                    <div class="tech-orbit">
+                        <div class="tech-center">
+                            <i data-lucide="code" class="tech-center-icon"></i>
+                        </div>
+                        <div class="tech-item" data-tech="react">
+                            <i data-lucide="globe"></i>
+                        </div>
+                        <div class="tech-item" data-tech="node">
+                            <i data-lucide="server"></i>
+                        </div>
+                        <div class="tech-item" data-tech="database">
+                            <i data-lucide="database"></i>
+                        </div>
+                        <div class="tech-item" data-tech="terminal">
+                            <i data-lucide="terminal"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">// tech_stack</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">Technologies powering my development arsenal</p>
+            </div>
+
+            <div class="skills-grid" id="skills-grid">
+                <!-- Skills will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container-large">
+            <div class="section-header">
+                <h2 class="section-title">// projects</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">Featured projects showcasing my development expertise and creative problem-solving</p>
+            </div>
+
+            <div class="projects-grid" id="projects-grid">
+                <!-- Projects will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="resume-section">
+        <div class="container">
+            <div class="resume-card">
+                <div class="glow-card">
+                    <div class="card-content text-center">
+                        <div class="resume-icon">
+                            <div class="icon-wrapper">
+                                <i data-lucide="download" class="download-icon"></i>
+                            </div>
+                        </div>
+                        <h2 class="resume-title">resume.pdf</h2>
+                        <p class="resume-description">Download my complete professional profile</p>
+                        <button class="code-button" onclick="downloadResume()">
+                            <i data-lucide="download"></i>
+                            download_resume()
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">// contact</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">Let's connect and build something amazing together</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="glow-card blue">
+                        <div class="card-content">
+                            <h3 class="contact-title">Get In Touch</h3>
+
+                            <div class="contact-items">
+                                <div class="contact-item">
+                                    <div class="contact-icon green">
+                                        <i data-lucide="mail"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <p class="contact-label">EMAIL</p>
+                                        <p class="contact-value">Namanbagrecha007@gmail.com</p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-item">
+                                    <div class="contact-icon blue">
+                                        <i data-lucide="github"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <p class="contact-label">GITHUB</p>
+                                        <p class="contact-value">https://github.com/Namanjaina</p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-item">
+                                    <div class="contact-icon cyan">
+                                        <i data-lucide="linkedin"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <p class="contact-label">LINKEDIN</p>
+                                        <p class="contact-value">https://www.linkedin.com/in/naman-bagrecha-860624259/</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="terminal-status">
+                                <div class="terminal-line text-green">naman@terminal:~$ status</div>
+                                <div class="terminal-line text-cyan">🟢 Available for new opportunities</div>
+                                <div class="terminal-line text-yellow">📍 Location: Open to remote work</div>
+                                <div class="terminal-line text-blue">⚡ Response time: Usually within 24 hours</div>
+                                <div class="terminal-line text-green">
+                                    naman@terminal:~$<span class="cursor">_</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <div class="glow-card green">
+                        <div class="card-content">
+                            <h3 class="contact-title">Send Message</h3>
+
+                            <form id="contact-form" class="form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label class="form-label">// name</label>
+                                        <input type="text" name="name" class="form-input" placeholder="Enter your name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">// email</label>
+                                        <input type="email" name="email" class="form-input" placeholder="your.email@example.com" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">// subject</label>
+                                    <input type="text" name="subject" class="form-input" placeholder="Project collaboration, job opportunity, etc." required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">// message</label>
+                                    <textarea name="message" rows="6" class="form-textarea" placeholder="Tell me about your project or opportunity..." required></textarea>
+                                </div>
+
+                                <div class="form-buttons">
+                                    <button type="submit" class="code-button flex-1" id="submit-btn">
+                                        <i data-lucide="arrow-right"></i>
+                                        send_message()
+                                    </button>
+                                    <button type="reset" class="code-button blue">
+                                        clear_form()
+                                    </button>
+                                </div>
+
+                                <div id="form-status" class="form-status hidden"></div>
+
+                                <div class="terminal-form-status">
+                                    <span class="text-green">&gt; form.status: </span>
+                                    <span id="form-terminal-status" class="text-cyan">ready_to_send</span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="cta-section">
+                <div class="glow-card cyan">
+                    <div class="card-content text-center">
+                        <h3 class="cta-title">Ready to Start Your Project?</h3>
+                        <p class="cta-description">
+                            Whether you need a full-stack web application, a responsive frontend, or API development, I'm here to
+                            bring your ideas to life with clean, efficient code and modern technologies.
+                        </p>
+                        <div class="cta-buttons">
+                            <button class="code-button" onclick="scrollToSection('contact')">
+                                <i data-lucide="mail"></i>
+                                schedule_call()
+                            </button>
+                            <button class="code-button blue" onclick="scrollToTop()">
+                                <i data-lucide="download"></i>
+                                view_portfolio()
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">© 2025 Naman Bagrecha — Crafted with passion and precision</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
