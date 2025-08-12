@@ -27,7 +27,7 @@ const projects = [
     description:
       "A personal finance tracker that lets you scan bills via OCR, track expenses, and view your complete financial history in one place.",
     tech: ["React", "Node.js", "Next.js", "Chart.js"],
-    image: "/placeholder.svg?height=300&width=500&text=Personal+Finance+Tracker",
+    image: "public/tracker.svg?height=100&width=100&text=Personal+Finance+Tracker",
     glowColor: "#00ff41",
     github: "https://github.com/Namanjaina/personal-finance-tracker",
     
@@ -36,7 +36,7 @@ const projects = [
     title: "Aura Voice Assistant",
     description: "Aura Voice Assistant is an AI tool that responds to voice commands, answers queries, and automates tasks.",
     tech: ["React", "Flask", "Python", "FastAPI", "Tailwindcss"],
-    image: "/placeholder.svg?height=300&width=500&text=Aura+Voice+Assistant",
+    image: "public/assistant.svg?&text=Aura+Voice+Assistant",
     glowColor: "#0099ff",
     github: "https://github.com/Namanjaina/Aura-voice-assistant",
     
@@ -46,10 +46,10 @@ const projects = [
     description:
       "A real-time platform that instantly connects patients with nearby verified blood and organ donors using location-based matching and emergency alerts.",
     tech: ["JavaScript", "React.js", "Tailwind CSS", "Weather API", "Python","Django"],
-    image: "/placeholder.svg?height=300&width=500&text=Smart+Blood&Organ+Donation+Network",
+    image: "public/donation.svg?height=300&width=500&text=Smart+Blood&Organ+Donation+Network",
     glowColor: "#00ffff",
     github: "#",
-    live: "#",
+    
   },
 ]
 
