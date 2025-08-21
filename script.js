@@ -716,8 +716,8 @@ function scrollToTop() {
 
 function downloadResume() {
     const link = document.createElement('a');
-    link.href = 'public/resume.jpg'; // Path to your image
-    link.download = 'Naman_Bagrecha_Resume.jpg'; // File name for download
+    link.href = 'public/Resume.pdf'; // Path to your image
+    link.download = 'Naman_Bagrecha_Resume.pdf'; // File name for download
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
