@@ -11,9 +11,8 @@
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-
-         <link rel="icon" href="public/favicon.ico" type="image/x-icon">
-
+    
+     <link rel="icon" href="public/favicon.ico" type="image/x-icon">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -318,6 +317,7 @@
                                 <div class="terminal-form-status">
                                     <span class="text-green">&gt; form.status: </span>
                                     <span id="form-terminal-status" class="text-cyan">ready_to_send</span>
+
                                 </div>
                             </form>
                         </div>
@@ -358,6 +358,14 @@
             </div>
         </div>
     </footer>
+
+                                      <!-- Add this script in your index.html before your JS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("GfR8tmSNwxaS-DPfn"); // Replace with your EmailJS Public Key
+  })();
+</script>
 
     <!-- JavaScript -->
     <script src="script.js"></script>
