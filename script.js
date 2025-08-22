@@ -506,7 +506,9 @@ class ProjectsRenderer {
               <button class="project-action green" onclick="window.open('${project.github}', '_blank')">
                 <i data-lucide="github"></i>
               </button>
-              
+              <button class="project-action blue" onclick="window.open('${project.live}', '_blank')">
+                <i data-lucide="external-link"></i>
+              </button>
             </div>
           </div>
           <div class="project-content">
@@ -521,9 +523,9 @@ class ProjectsRenderer {
             <div class="project-buttons">
               <a href="${project.github}" class="project-button outline" target="_blank">
                 <i data-lucide="github"></i>
-               Git Code
+                Git Code
               </a>
-              
+             
             </div>
           </div>
         </div>
@@ -575,8 +577,7 @@ class ContactFormHandler {
 
     try {
       // Simulate API call (replace with actual endpoint)
-      await this.simulateEmailSend(data)
-
+      await this.sendEmail(data)
       this.setFormStatus("success", "Message sent successfully! I'll get back to you soon.")
       this.form.reset()
 
@@ -624,19 +625,26 @@ class ContactFormHandler {
     return true
   }
 
-  async simulateEmailSend(data) {
-    // Simulate network delay
-    await new Promise((resolve) => setTimeout(resolve, 2000))
-
-    // Simulate random success/failure for demo
-    if (Math.random() > 0.1) {
-      // 90% success rate
-      console.log("Email sent:", data)
-      return { success: true }
-    } else {
-      throw new Error("Network error")
-    }
+async sendEmail(data) {
+  try {
+    const result = await emailjs.send(
+      "service_3w6y76q",    // apna EmailJS service ID daalo
+      "template_tnugyg2",   // apna EmailJS template ID daalo
+      {
+        name: data.name,
+        email: data.email,
+        subject: data.subject,
+        message: data.message,
+      }
+    );
+    console.log("Email sent:", result);
+    return result;
+  } catch (error) {
+    console.error("EmailJS error:", error);
+    throw error;
   }
+}
+
 
   setFormStatus(type, message) {
     state.formStatus = { type, message }
