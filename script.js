@@ -14,9 +14,9 @@ const skills = [
   { name: "CSS3", level: 92, color: "#1572b6", icon: "layers" },
   { name: "JavaScript", level: 90, color: "#f7df1e", icon: "terminal" },
   { name: "React", level: 88, color: "#61dafb", icon: "globe" },
-  { name: "Node.js", level: 85, color: "#68a063", icon: "server" },
+  { name: "Python", level: 85, color: "#68a063", icon: "server" },
   { name: "Tailwind CSS", level: 90, color: "#06b6d4", icon: "zap" },
-  { name: "MongoDB", level: 82, color: "#4db33d", icon: "database" },
+  { name: "PostgresSQL", level: 82, color: "#4db33d", icon: "database" },
   { name: "Django", level: 80, color: "#00ff41", icon: "cpu" },
 ]
 
@@ -42,13 +42,13 @@ const projects = [
     
   },
   {
-    title: "Smart Blood & Organ Donation Network ",
+    title: "Car Health Maintanance System",
     description:
-      "A real-time platform that instantly connects patients with nearby verified blood and organ donors using location-based matching and emergency alerts.",
-    tech: ["JavaScript", "React.js", "Tailwind CSS", "Weather API", "Python","Django"],
-    image: "public/donation.svg?height=300&width=500&text=Smart+Blood&Organ+Donation+Network",
+      "Predicts vehicle failures by using AI to analyze car sensor data, helping you avoid unexpected breakdowns.",
+    tech: ["Python", "PostgresSQL" ,"Machine Learning", "AI"],
+    image: "public/car.png?height=300&width=500&text=car+health+maintanance+system",
     glowColor: "#00ffff",
-    github: "#",
+    github: "https://github.com/Namanjaina/Car_Health_Pridiction_system",
     
   },
 ]
