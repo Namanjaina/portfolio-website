@@ -724,7 +724,7 @@ function scrollToTop() {
 
 function downloadResume() {
     const link = document.createElement('a');
-    link.href = 'public/Resume.pdf'; // Path to your image
+    link.href = 'public/updated cv.pdf'; // Path to your image
     link.download = 'Naman_Bagrecha_Resume.pdf'; // File name for download
     document.body.appendChild(link);
     link.click();
