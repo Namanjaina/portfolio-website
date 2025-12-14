@@ -51,6 +51,25 @@ const projects = [
     github: "https://github.com/Namanjaina/Car_Health_Pridiction_system",
     
   },
+  {
+    title: "Instagram Clone",
+    description:
+      "A full-stack Instagram Clone developed using MongoDB, Express, React, and Node.js. Includes user authentication, post upload, likes, comments, follow system, and JWT-based security.",
+    tech: [ "MongoDB","Express","React","Node.js"],
+    image: "public/instagramclone.webp?height=300&width=500&text=instagramclone",
+    glowColor: "#00ffff",
+    github: "https://github.com/Namanjaina/instagram-clone",
+    
+  },
+  {
+    title: "Adani-Stock-Analysis-PowerBi",
+    description:
+      "Adani Stock Analysis Dashboard built using Power BI to analyze share price trends, volume, returns, and performance insights using interactive visualizations.",
+    tech: ["Vishualization" ,"Excel", "Power BI"],
+    image: "public/stockanalysis.png?height=300&width=500&text=stockanalysis",
+    glowColor: "#00ffff",
+    github: "https://github.com/Namanjaina/Adani-Stock-Analysis-PowerBi",
+  },
 ]
 
 // Typing Animation Class
